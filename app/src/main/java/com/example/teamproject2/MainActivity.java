@@ -8,7 +8,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
     private Fragment fragment4;
     private Fragment fragment5;
     private Fragment fragment6;
+
+    private MyData[] mData = {
+            new MyData(R.drawable.ic_arrow, "사과"),
+            new MyData(R.drawable.ic_arrow, "바나나"),
+            new MyData(R.drawable.ic_arrow, "포도"),
+            new MyData(R.drawable.ic_arrow, "파인애플"),
+            new MyData(R.drawable.ic_arrow, "수박")
+    };
+    private ListView mList;
+    private MyAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
