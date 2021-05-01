@@ -33,7 +33,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+<<<<<<< HEAD
                 android:selectAllOnFocus="true"/>
+=======
+                android:hint="깃허브 테스트_JB"/>
+>>>>>>> 04f497d35f9ee7acd33c298fa73bf9e314a9eae8
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
